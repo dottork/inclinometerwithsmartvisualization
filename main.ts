@@ -76,6 +76,9 @@ basic.forever(function () {
     rollmedio = t1 / 15
     tempmedia = t2 / 15
     compassmedio = t3 / 15 + 6.5
+    if (compassmedio > 360) {
+        compassmedio = compassmedio - 360
+    }
 })
 basic.forever(function () {
     basic.clearScreen()
